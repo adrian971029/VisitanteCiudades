@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Visitante de ciudades">
+    <output-path>$PROJECT_DIR$/out/artifacts/Visitante_de_ciudades</output-path>
+    <root id="archive" name="Visitante de ciudades.jar" />
+  </artifact>
+</component>

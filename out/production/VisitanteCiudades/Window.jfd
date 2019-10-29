@@ -1,0 +1,54 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:27:p, comp lblCiudadeInicial:::p::p, space u:::p, comp cbCiudadeInicial:::p:168:p, space :p:41:p, comp lblCiudadeFinal:::p::p, space u:::p, comp cbCiudadeFinal:::p:168:p}, seq l {space :p:16:p, par l:::p {seq {par l {comp btnBuscaLargura:::p::p, comp btnBuscaProfundidade:::p::p}, space u:::p, comp scrollPane1:::::x}, comp image_map:::p:652:p}}}, space ::15:x}}"
+			"$verticalGroup": "par l {seq {space :p:18:p, par b {comp lblCiudadeInicial::b:p::p, comp lblCiudadeFinal::b:p::p, comp cbCiudadeInicial::b:p::p, comp cbCiudadeFinal::b:p::p}, space s:::p, comp image_map:::p:409:p, space :p:11:p, par l {seq {comp btnBuscaLargura:::p::p, space s:::p, comp btnBuscaProfundidade:::p::p}, comp scrollPane1:::p:78:p}, space ::12:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCiudadeInicial"
+				"text": "Ciudade Inicial:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cbCiudadeInicial"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCiudadeFinal"
+				"text": "Ciudade Final:"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cbCiudadeFinal"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBuscaLargura"
+				"text": "Busca em Largura"
+				"maximumSize": new java.awt.Dimension( 170, 30 )
+				"minimumSize": new java.awt.Dimension( 170, 30 )
+				"preferredSize": new java.awt.Dimension( 170, 30 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnBuscaLarguraActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBuscaProfundidade"
+				"text": "Busca em Profundiade"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnBuscaProfundidadeActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "image_map"
+				"preferredSize": new java.awt.Dimension( 500, 500 )
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "/Users/adriandeltoro/Personal/Programacao/BuscaEmLargura/resources/map_image.png" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "tfResultado"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 685, 600 )
+		} )
+	}
+}
